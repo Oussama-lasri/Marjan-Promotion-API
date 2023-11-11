@@ -10,28 +10,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5f96381-de05-40de-90e7-995ae8f898dd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Config/PersistenceJPAConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Controllers/AdminCentreController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Models/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Models/AdminCentre.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Models/AdminGeneral.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Models/Categorie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Models/Centre.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Models/Produit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Models/Promotion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Models/Rayon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Models/ResponsableRayon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Models/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Repositories/AdminCentreRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Services/AdmincentreService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../school/school.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Config/AppWebApplicationInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Services/Impl/AdminCentreServiceImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Config/PersistenceJPAConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Config/PersistenceJPAConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Config/WebApplicationInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Config/WebApplicationInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Config/WebConf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Config/WebConf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Controllers/AdminCentreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Controllers/AdminCentreController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Repositories/AdminCentreRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Repositories/AdminCentreRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Services/AdmincentreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Services/AdminCentreService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,13 +32,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -72,29 +64,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/adm/Desktop/Marjan-Promotion-API",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/adm/Desktop/MP1/Marjan-Promotion-API&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;service.view.auto.scroll.to.source&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.marjanpromotionapi.Services.Impl" />
       <recent name="com.example.marjanpromotionapi.Models" />
     </key>
   </component>
@@ -198,6 +193,9 @@
       <workItem from="1699537006164" duration="7000" />
       <workItem from="1699572256953" duration="10382000" />
       <workItem from="1699633196233" duration="1220000" />
+      <workItem from="1699647670695" duration="11950000" />
+      <workItem from="1699667664445" duration="11783000" />
+      <workItem from="1699726196613" duration="432000" />
     </task>
     <servers />
   </component>
