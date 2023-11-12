@@ -1,15 +1,14 @@
 package com.example.marjanpromotionapi.Models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Component;
+
+import java.util.List;
 
 @Entity
 @Data
@@ -26,4 +25,6 @@ public class AdminGeneral {
     private String email ;
     @NotEmpty(message = "Password cannot be empty")
     private String password ;
+    @OneToMany(fetch = FetchType.EAGER,mappedBy = "adminGeneral", cascade = CascadeType.MERGE)
+    List<AdminCentre> adminCentreList ;
 }

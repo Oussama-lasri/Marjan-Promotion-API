@@ -5,8 +5,10 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -15,6 +17,8 @@ import java.util.List;
 
 @Data
 @Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class AdminCentreDTO {
 
     private Long id ;
@@ -23,7 +27,7 @@ public class AdminCentreDTO {
 
     private String password ;
 
-    private List<Centre> centreList ;
+    private List<CentreDTO> centreList ;
 
    // private LocalDateTime createdOn ;
     // private LocalDateTime updatedOn ;

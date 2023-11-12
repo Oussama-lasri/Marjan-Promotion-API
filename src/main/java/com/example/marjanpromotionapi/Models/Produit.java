@@ -15,10 +15,12 @@ public class Produit {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id ;
-    private String title ;
+    private String titre ;
     private Float prix ;
     @ManyToOne
     private Categorie categorie ;
+    @ManyToOne
+    private Promotion promotion ;
     @CreationTimestamp
     private LocalDateTime createdOn ;
     @UpdateTimestamp

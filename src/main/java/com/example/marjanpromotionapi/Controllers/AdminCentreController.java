@@ -33,8 +33,10 @@ public class AdminCentreController {
     // save
     @PostMapping("/AdminCentre/create")
     public ResponseEntity<?> saveAdminCentre(@RequestBody AdminCentre adminCentre){
+      //  return ResponseEntity.ok().body("create");
         adminCentreService.saveAdminCentre(adminCentre);
-        return ResponseEntity.ok().body(adminCentre.getId() +  " -> created with success");
+
+        return ResponseEntity.ok().body(adminCentre.getId()   +  " -> created with success");
     }
     // update
 

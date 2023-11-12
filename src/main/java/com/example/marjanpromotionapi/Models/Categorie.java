@@ -8,6 +8,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -21,6 +22,8 @@ public class Categorie {
     private Long id;
     @NotEmpty
     private String nom ;
-    @OneToMany
-    private List<Produit> produits ;
+    @OneToMany(fetch = FetchType.EAGER,mappedBy = "categorie", cascade = CascadeType.ALL)
+    private List<Produit> produitList ;
+    @OneToMany(fetch = FetchType.EAGER,mappedBy = "categorie", cascade = CascadeType.ALL)
+    private List<Promotion> promotionList = new ArrayList<>();
 }

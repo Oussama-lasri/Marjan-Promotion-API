@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
@@ -15,6 +16,7 @@ import java.util.List;
 
 @Entity
 //@Table(name = "")
+@Builder
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -32,8 +34,13 @@ public class AdminCentre {
     private LocalDateTime createdOn ;
     @UpdateTimestamp
     private LocalDateTime updatedOn ;
-    @OneToMany(mappedBy = "adminCentre", cascade = CascadeType.ALL)
+    @OneToMany(fetch = FetchType.EAGER,mappedBy = "adminCentre", cascade = CascadeType.MERGE)
     private List<Centre> centreList ;
+    @ManyToOne
+    private AdminGeneral adminGeneral ;
+
+    @Transient
+    private List<Long> centreIds;
 
 
 }

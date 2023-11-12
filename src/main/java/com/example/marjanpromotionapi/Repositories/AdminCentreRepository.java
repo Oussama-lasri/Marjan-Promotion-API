@@ -12,4 +12,5 @@ import java.util.Optional;
 @Transactional
 public interface AdminCentreRepository extends JpaRepository<AdminCentre,Long> {
     Optional<AdminCentre>  findAdminCentreById(Long id);
+
 }
