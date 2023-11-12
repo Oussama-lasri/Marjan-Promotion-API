@@ -9,19 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5f96381-de05-40de-90e7-995ae8f898dd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Config/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Config/AppWebApplicationInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Services/Impl/AdminCentreServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a5f96381-de05-40de-90e7-995ae8f898dd" name="Changes" comment="correct config">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Controllers/AdminGeneralController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/DTO/AdminCentreDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Repositories/AdminGeneralRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Services/AdminGeneralService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Services/Impl/AdminGeneralServiceImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Config/PersistenceJPAConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Config/PersistenceJPAConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Config/WebApplicationInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Config/WebApplicationInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Config/WebConf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Config/WebConf.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Controllers/AdminCentreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Controllers/AdminCentreController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Repositories/AdminCentreRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Repositories/AdminCentreRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Services/AdmincentreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Services/AdminCentreService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Models/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Models/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Models/AdminCentre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Models/AdminCentre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Models/AdminGeneral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Models/AdminGeneral.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Services/AdminCentreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Services/AdminCentreService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Services/Impl/AdminCentreServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Services/Impl/AdminCentreServiceImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -195,11 +195,35 @@
       <workItem from="1699633196233" duration="1220000" />
       <workItem from="1699647670695" duration="11950000" />
       <workItem from="1699667664445" duration="11783000" />
-      <workItem from="1699726196613" duration="432000" />
+      <workItem from="1699726196613" duration="19753000" />
     </task>
+    <task id="LOCAL-00001" summary="correct config">
+      <option name="closed" value="true" />
+      <created>1699726714373</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1699726714373</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="correct config" />
+    <option name="LAST_COMMIT_MESSAGE" value="correct config" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Services/Impl/AdminGeneralServiceImp.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -1,9 +1,6 @@
 package com.example.marjanpromotionapi.Models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
 import lombok.AllArgsConstructor;
@@ -14,6 +11,7 @@ import org.hibernate.annotations.UpdateTimestamp;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
 //@Table(name = "")
@@ -34,9 +32,8 @@ public class AdminCentre {
     private LocalDateTime createdOn ;
     @UpdateTimestamp
     private LocalDateTime updatedOn ;
-
-
-
+    @OneToMany(mappedBy = "adminCentre", cascade = CascadeType.ALL)
+    private List<Centre> centreList ;
 
 
 }
