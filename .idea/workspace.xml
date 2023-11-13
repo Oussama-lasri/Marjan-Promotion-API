@@ -9,26 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5f96381-de05-40de-90e7-995ae8f898dd" name="Changes" comment="crud adminCentre and Login of AdminGeneral">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Controllers/PromotionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/DTO/CentreDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Enums/StatusPromo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Repositories/CategoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Repositories/CentreRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Repositories/PromotionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Services/Impl/PromotionServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Services/PromotionService.java" afterDir="false" />
+    <list default="true" id="a5f96381-de05-40de-90e7-995ae8f898dd" name="Changes" comment="affect centre to admineCentre and create Promotion">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/DTO/ProduitDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/DTO/PromotionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Repositories/ProduitRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Controllers/AdminCentreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Controllers/AdminCentreController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/DTO/AdminCentreDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/DTO/AdminCentreDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Models/AdminCentre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Models/AdminCentre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Models/AdminGeneral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Models/AdminGeneral.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Models/Categorie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Models/Categorie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Models/Centre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Models/Centre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Models/Produit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Models/Produit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Controllers/PromotionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Controllers/PromotionController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Models/Promotion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Models/Promotion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Repositories/AdminCentreRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Repositories/AdminCentreRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Services/Impl/AdminCentreServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Services/Impl/AdminCentreServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Services/Impl/PromotionServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Services/Impl/PromotionServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Services/PromotionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/marjanpromotionapi/Services/PromotionService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +192,7 @@
       <workItem from="1699633196233" duration="1220000" />
       <workItem from="1699647670695" duration="11950000" />
       <workItem from="1699667664445" duration="11783000" />
-      <workItem from="1699726196613" duration="43270000" />
+      <workItem from="1699726196613" duration="49364000" />
     </task>
     <task id="LOCAL-00001" summary="correct config">
       <option name="closed" value="true" />
@@ -221,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699804802017</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="affect centre to admineCentre and create Promotion">
+      <option name="closed" value="true" />
+      <created>1699832532485</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1699832532486</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,7 +227,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="correct config" />
     <MESSAGE value="crud adminCentre and Login of AdminGeneral" />
-    <option name="LAST_COMMIT_MESSAGE" value="crud adminCentre and Login of AdminGeneral" />
+    <MESSAGE value="affect centre to admineCentre and create Promotion" />
+    <option name="LAST_COMMIT_MESSAGE" value="affect centre to admineCentre and create Promotion" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

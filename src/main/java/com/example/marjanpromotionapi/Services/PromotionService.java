@@ -1,6 +1,6 @@
 package com.example.marjanpromotionapi.Services;
 
-import com.example.marjanpromotionapi.Models.Categorie;
+import com.example.marjanpromotionapi.DTO.PromotionDTO;
 import com.example.marjanpromotionapi.Models.Promotion;
 
 import java.util.List;
@@ -8,5 +8,5 @@ import java.util.List;
 public interface PromotionService {
     public Promotion createPromotion(Promotion promotion , Long categorieId);
 
-    public List<Promotion> promotionList();
+    public List<PromotionDTO> promotionList();
 }
