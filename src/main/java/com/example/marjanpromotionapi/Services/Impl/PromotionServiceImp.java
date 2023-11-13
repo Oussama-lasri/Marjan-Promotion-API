@@ -70,10 +70,14 @@ public class PromotionServiceImp implements PromotionService {
     }
 
     private CategorieDTO mapToCategorieDTO(Categorie categorie) {
-        return CategorieDTO.builder()
-                .nom(categorie.getNom())
-                .id(categorie.getId())
-                .build();
+        if (categorie != null) {
+            return CategorieDTO.builder()
+                    .nom(categorie.getNom())
+                    .id(categorie.getId())
+                    .build();
+        } else {
+            return null;
+        }
     }
 
     private List<ProduitDTO> mapToProduitDTOlist(List<Produit> produitList) {
